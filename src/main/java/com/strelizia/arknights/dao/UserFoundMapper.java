@@ -2,6 +2,7 @@ package com.strelizia.arknights.dao;
 
 import com.strelizia.arknights.model.UserFoundInfo;
 import com.strelizia.arknights.model.UserGetInfo;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
  * @author wangzy
  * @Date 2020/12/7 13:50
  **/
+@Mapper
 public interface UserFoundMapper {
 
     //更新某用户今日抽卡数，同时更新这个用户所属群号以及群昵称

@@ -1,6 +1,7 @@
 package com.strelizia.arknights.dao;
 
 import com.strelizia.arknights.model.AgentInfo;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.List;
  * @author wangzy
  * @Date 2020/12/7 13:50
  **/
+@Mapper
 public interface AgentMapper {
 
     //根据稀有度查询干员列表

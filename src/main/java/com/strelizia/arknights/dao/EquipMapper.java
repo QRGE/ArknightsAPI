@@ -2,6 +2,7 @@ package com.strelizia.arknights.dao;
 
 import com.strelizia.arknights.model.*;
 import io.swagger.models.auth.In;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
  * @author wangzy
  * @Date 2021/3/29 17:07
  **/
+@Mapper
 public interface EquipMapper {
 
     Integer insertEquipInfo(EquipInfo equipInfo);

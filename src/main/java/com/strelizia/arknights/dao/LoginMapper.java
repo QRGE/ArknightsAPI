@@ -1,6 +1,7 @@
 package com.strelizia.arknights.dao;
 
 import com.strelizia.arknights.model.LoginUser;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
@@ -8,6 +9,7 @@ import java.util.List;
  * @author wangzy
  * @Date 2020/12/7 13:50
  **/
+@Mapper
 public interface LoginMapper {
 
     //根据用户名查密码的md5

@@ -1,6 +1,7 @@
 package com.strelizia.arknights.dao;
 
 import com.strelizia.arknights.model.AgentTagsInfo;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.List;
  * @author wangzy
  * @Date 2020/12/14 18:07
  **/
+@Mapper
 public interface AgentTagsMapper {
 
     //根据tag列表，循环获取所有tag对应的干员列表

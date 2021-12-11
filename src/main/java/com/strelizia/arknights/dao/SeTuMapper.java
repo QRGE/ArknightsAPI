@@ -1,6 +1,7 @@
 package com.strelizia.arknights.dao;
 
 import com.strelizia.arknights.model.ImgUrlInfo;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.List;
  * @author wangzy
  * @Date 2020/12/22 16:46
  **/
+@Mapper
 public interface SeTuMapper {
 
     //根据qq的MD5加密获取某人的今日涩图请求数

@@ -1,6 +1,7 @@
 package com.strelizia.arknights.dao;
 
 import com.strelizia.arknights.model.MaterialInfo;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.List;
  * @author wangzy
  * @Date 2020/12/14 11:12
  **/
+@Mapper
 public interface SkillMateryMapper {
 
     //根据技能名和技能等级查询升级所需的材料

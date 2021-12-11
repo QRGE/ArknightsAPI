@@ -1,6 +1,7 @@
 package com.strelizia.arknights.dao;
 
 import com.strelizia.arknights.model.SkinInfo;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.List;
  * @author wangzy
  * @Date 2021/4/7 17:14
  **/
+@Mapper
 public interface SkinInfoMapper {
     List<SkinInfo> selectSkinByInfo(String Info);
 

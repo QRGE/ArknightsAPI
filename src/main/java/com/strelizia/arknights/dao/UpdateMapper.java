@@ -1,12 +1,14 @@
 package com.strelizia.arknights.dao;
 
 import com.strelizia.arknights.model.*;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 /**
  * @author wangzy
  * @Date 2020/12/19 18:42
  **/
+@Mapper
 public interface UpdateMapper {
 
     //插入一个干员信息

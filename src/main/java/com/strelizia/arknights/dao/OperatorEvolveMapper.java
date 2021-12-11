@@ -2,6 +2,7 @@ package com.strelizia.arknights.dao;
 
 import com.strelizia.arknights.model.MaterialInfo;
 import com.strelizia.arknights.model.OperatorData;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
  * @author wangzy
  * @Date 2020/12/14 11:12
  **/
+@Mapper
 public interface OperatorEvolveMapper {
 
     //根据干员名称和精英化等级获取对应的消耗材料列表

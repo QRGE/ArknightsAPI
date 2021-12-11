@@ -5,6 +5,7 @@ import com.strelizia.arknights.model.MapMatrixInfo;
 import com.strelizia.arknights.model.MaterialInfo;
 import com.strelizia.arknights.model.SourcePlace;
 import io.swagger.models.auth.In;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.List;
  * @author wangzy
  * @Date 2020/12/14 15:05
  **/
+@Mapper
 public interface MaterialMadeMapper {
 
     //根据材料名获取该材料的合成列表

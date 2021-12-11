@@ -2,6 +2,7 @@ package com.strelizia.arknights.dao;
 
 import com.strelizia.arknights.model.GroupAdminInfo;
 import io.swagger.models.auth.In;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
  * @author wangzy
  * @Date 2021/3/17 17:52
  **/
+@Mapper
 public interface GroupAdminInfoMapper {
 
     GroupAdminInfo getGroupAdminNum(Long groupId);

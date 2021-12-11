@@ -1,7 +1,9 @@
 package com.strelizia.arknights.dao;
 
 import com.strelizia.arknights.model.QuestionInfo;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface QuestionMapper {
     //获取一个完整的问题
     QuestionInfo getQuestionById(Integer id);

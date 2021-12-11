@@ -3,6 +3,7 @@ package com.strelizia.arknights.dao;
 import com.strelizia.arknights.model.OperatorBasicInfo;
 import com.strelizia.arknights.model.OperatorName;
 import com.strelizia.arknights.model.TalentInfo;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.Set;
  * @author wangzy
  * @Date 2021/3/29 17:07
  **/
+@Mapper
 public interface OperatorInfoMapper {
     //根据各种信息查找对应干员
     List<String> getOperatorNameByInfo(String Info);

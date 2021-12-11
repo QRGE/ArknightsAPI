@@ -1,6 +1,7 @@
 package com.strelizia.arknights.dao;
 
 import com.strelizia.arknights.model.BiliCount;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.List;
  * @author wangzy
  * @Date 2021/1/12 17:13
  **/
+@Mapper
 public interface BiliMapper {
     //获取所有uid
     List<BiliCount> getBiliCountList();
